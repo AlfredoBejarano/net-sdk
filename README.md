@@ -2,15 +2,27 @@
 
 This is the official .NET SDK for MercadoLibre's Platform.
 
-## How do I install it?
+## How do I use it?
 
-You can download the latest build at: 
-    http://github.com/mercadolibre/net-sdk/downloads
+Download the latest (current master branch) build [clicking here!](https://github.com/AlfredoBejarano/net-sdk/raw/master/net-sdk-1.zip)
 
-And that's it!
+## Add it to your project
 
-## How do I start using it?
+Download and extract the latest build.
 
+Go to Project -> Add Reference
+
+In the Reference Manager window, go to Projects -> Solution and click the "Browse..." button
+
+Browse to the directory where the extracted files from the .zip are
+
+Add *net-sdk.dll* , *NewtonsoftJson.dll* and *RestSharp.dll*
+
+Reference the SDK object to create instances of it
+
+```csharp
+using MercadoLibre.SDK;
+```
 The first thing to do is to instance a ```Meli``` class. You'll need to give a ```clientId``` and a ```clientSecret```. You can obtain both after creating your own application. For more information on this please read: [creating an application](http://developers.mercadolibre.com/creating-your-own-application/)
 
 ```csharp
